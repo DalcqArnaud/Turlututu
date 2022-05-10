@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 4% 20% 6% 24% 6% 20% 16% 4%;
+}
+
+nav{
+    grid-row: 1 / 2;
+    background-color: rgb(46, 46, 46);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;      
+}
+
+.navLeftButtons{
+    justify-self: end;
+    grid-column: 1 / 2;
+    display: flex;   
+}
+
+.login{
+    justify-self: center;
+    grid-column: 2 / 3;
+    padding-left: 50%;
+    display: flex;
+}
+
+button[id*="nav"]{
+    background-color: rgb(46, 46, 46);
+    border: 0;
+    color: white;
+    padding-left: 18px;
+    font-size: 60%;
+}
+
+.siteLogo{
+    width: 15%;
+}
+
+#navLoginButton{
+    padding-left: 0;
+}
+
+header{
+    grid-row: 2 / 3;
+    background-color: dodgerblue;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.avatarLogo{
+    width: 60%;
+    justify-self: center;
+}
+
+.avatarLogo{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.headerMainText{
+    height: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.siteMainLogo{    
+    width: 50%;
+}
+
+.headerMainText>h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    font-weight: normal;
+}
+
+.buildingButton{
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: darkorange;
+    width: 50%;
+    height: 20%;
+    margin-bottom: 20px;
+}
+
+#mainHeader{
+    grid-row: 3 / 4;
+    background-color: white;    
+    width: 100%;
+    text-align: center;
+    place-self: center;
+}
+
+#mainHeader>h1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    font-weight: normal;
+}
+
+#mainContent{
+    grid-row: 4 / 5;
+    background-color: dodgerblue;
+}
+
+#mainFooter{
+    grid-row: 5 / 6;
+    background-color: white;
+}
+
+#mainSponsors{
+    grid-row: 6 / 7;
+    background-color: red;
+}
+
+#mainButtons{
+    grid-row: 7 / 8;
+    background-color: white;
+}
+
+footer{
+    grid-row: 8 / 9;
+    background-color: rgb(46, 46, 46);
+}
